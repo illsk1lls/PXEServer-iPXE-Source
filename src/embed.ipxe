@@ -1,0 +1,9 @@
+#!ipxe
+dhcp
+kernel http://pxeserver.local/wimboot
+initrd http://pxeserver.local/BCD BCD
+initrd http://pxeserver.local/boot.sdi boot.sdi
+initrd http://pxeserver.local/bootmgr.exe bootmgr.exe
+initrd http://pxeserver.local/boot.wim boot.wim
+boot
+

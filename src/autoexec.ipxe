@@ -1,0 +1,9 @@
+#!ipxe
+:startup
+dhcp
+kernel http://pxeserver.local/NBP/wimboot || goto startup
+initrd http://pxeserver.local/boot/BCD BCD
+initrd http://pxeserver.local/boot/boot.sdi boot.sdi
+initrd http://pxeserver.local/bootmgr.efi bootmgr.efi
+initrd http://pxeserver.local/sources/boot.wim boot.wim
+boot

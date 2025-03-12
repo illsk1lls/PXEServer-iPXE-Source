@@ -1,0 +1,9 @@
+#!ipxe
+:startup
+dhcp || goto startup
+kernel http://${dhcp-server}:4433/NBP/wimboot || goto startup
+initrd http://${dhcp-server}:4433/boot/BCD BCD
+initrd http://${dhcp-server}:4433/boot/boot.sdi boot.sdi
+initrd http://${dhcp-server}:4433/bootmgr.exe bootmgr.exe
+initrd http://${dhcp-server}:4433/sources/boot.wim boot.wim
+boot

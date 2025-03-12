@@ -23,9 +23,6 @@ struct interface;
 struct dhcp_options;
 struct dhcp_packet;
 
-/** PXEServer Identifier */
-#define DHCP_OPTION_PXE_SERVER 200
-
 /** BOOTP/DHCP server port */
 #define BOOTPS_PORT 67
 

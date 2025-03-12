@@ -1,6 +1,6 @@
 #!ipxe
 :startup
-dhcp
+dhcp || goto startup
 kernel http://pxeserver.local/NBP/wimboot || goto startup
 initrd http://pxeserver.local/boot/BCD BCD
 initrd http://pxeserver.local/boot/boot.sdi boot.sdi

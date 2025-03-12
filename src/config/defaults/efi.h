@@ -28,13 +28,14 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #define MPAPI_EFI
 #define NAP_EFI
 
-#undef	NET_PROTO_IPV6		/* IPv6 protocol */
+#define	NET_PROTO_IPV6		/* IPv6 protocol */
 #define	NET_PROTO_LLDP		/* Link Layer Discovery protocol */
 
 #define DOWNLOAD_PROTO_FILE	/* Local filesystem access */
 
 #define	IMAGE_EFI		/* EFI image support */
 #define	IMAGE_SCRIPT		/* iPXE script image support */
+#define IMAGE_EFISIG		/* EFI signature list support */
 
 #define	SANBOOT_PROTO_ISCSI	/* iSCSI protocol */
 #define	SANBOOT_PROTO_AOE	/* AoE protocol */

@@ -35,7 +35,7 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  */
 
 #define	NET_PROTO_IPV4		/* IPv4 protocol */
-#undef NET_PROTO_IPV6	        /* IPv6 protocol */
+#undef NET_PROTO_IPV6	/* IPv6 protocol */
 #undef	NET_PROTO_FCOE		/* Fibre Channel over Ethernet protocol */
 #define	NET_PROTO_STP		/* Spanning Tree protocol */
 #define	NET_PROTO_LACP		/* Link Aggregation control protocol */
@@ -104,6 +104,7 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  */
 
 #define	DNS_RESOLVER		/* DNS resolver */
+
 /*
  * Image types
  *
@@ -124,6 +125,7 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
 #define	IMAGE_PNG		/* PNG image support */
 #define	IMAGE_DER		/* DER image support */
 #define	IMAGE_PEM		/* PEM image support */
+//#define	IMAGE_EFISIG		/* EFI signature list image support */
 //#define	IMAGE_ZLIB		/* ZLIB image support */
 //#define	IMAGE_GZIP		/* GZIP image support */
 //#define	IMAGE_UCODE		/* Microcode update image support */
@@ -132,7 +134,7 @@ FILE_LICENCE ( GPL2_OR_LATER_OR_UBDL );
  * Command-line commands to include
  *
  */
-#undef	AUTOBOOT_CMD		/* Automatic booting */
+#undef AUTOBOOT_CMD		/* Automatic booting */
 #define	NVO_CMD			/* Non-volatile option storage commands */
 #define	CONFIG_CMD		/* Option configuration console */
 #define	IFMGMT_CMD		/* Interface management commands */

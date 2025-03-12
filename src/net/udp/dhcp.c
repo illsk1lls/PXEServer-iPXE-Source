@@ -343,6 +343,16 @@ static int dhcp_discovery_tx ( struct dhcp_session *dhcp,
 	return 0;
 }
 
+/**
+ * Handle received packet during DHCP discovery
+ *
+ * @v dhcp		DHCP session
+ * @v dhcppkt		DHCP packet
+ * @v peer		DHCP server address
+ * @v msgtype		DHCP message type
+ * @v server_id		DHCP server ID
+ * @v pseudo_id		DHCP server pseudo-ID
+ */
 static void dhcp_discovery_rx ( struct dhcp_session *dhcp,
                 struct dhcp_packet *dhcppkt,
                 struct sockaddr_in *peer, uint8_t msgtype,
